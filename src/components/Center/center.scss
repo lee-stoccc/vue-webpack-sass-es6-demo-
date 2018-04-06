@@ -1,0 +1,23 @@
+@mixin mg($t:0,$r:0,$b:0,$l:0){
+    margin-top: $t;
+    margin-right: $r;
+    margin-bottom: $b;
+    margin-left: $l;
+}
+
+@mixin pd($t:0,$r:0,$b:0,$l:0){
+    padding-top: $t;
+    padding-right: $r;
+    padding-bottom: $b;
+    padding-left: $l;
+}
+
+@mixin wh($w:0,$h:0){
+    width: $w;
+    height: $h;
+}
+
+.body{
+    @include wh($w:40%,$h:100px);
+    background-color: #42b983;
+}
