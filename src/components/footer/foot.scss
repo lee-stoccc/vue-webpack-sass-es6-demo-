@@ -1,0 +1,37 @@
+@mixin mg($t:0,$r:0,$b:0,$l:0){
+    margin-top: $t;
+    margin-right: $r;
+    margin-bottom: $b;
+    margin-left: $l;
+}
+@mixin pd($t:0,$r:0,$b:0,$l:0){
+    padding-top: $t;
+    padding-right: $r;
+    padding-bottom: $b;
+    padding-left: $l;
+}
+
+
+.module-one{
+    background-color: white;
+    @include mg(1px,0,0px,0);
+    border-top: 2px solid #eee;
+    font-size: 0.5rem;
+    img{
+        width: 24px;
+        height:24px;
+    }
+    display: flex;
+    position: fixed;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-around;
+    div{
+        @include pd($t:5px,$b:4px);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

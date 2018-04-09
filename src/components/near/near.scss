@@ -1,0 +1,151 @@
+@mixin mg($t:0,$r:0,$b:0,$l:0){
+    margin-top: $t;
+    margin-right: $r;
+    margin-bottom: $b;
+    margin-left: $l;
+}
+@mixin pd($t:0,$r:0,$b:0,$l:0){
+    padding-top: $t;
+    padding-right: $r;
+    padding-bottom: $b;
+    padding-left: $l;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+.top{
+    @include mg($t:6px);
+    height:36px;
+    display: flex;
+    align-items: center;
+    width: 94%;
+    justify-content: flex-start;
+    select{
+        height: 26px;
+        @include mg($r:4%,$l:2%);
+        border: none;
+
+    }
+    input{
+        height: 26px;
+        flex: 1 0 auto;
+        background-color: #eee;
+        text-align: center;
+        border: none;
+    }
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+    @include mg($t:6px)
+}
+
+.ban{
+    display: flex;
+    justify-content: space-around;
+    line-height: 40px;
+    span{
+        border-bottom: 1px solid salmon;
+        font-size:0.9rem;
+    }
+}
+
+.ban-class{
+    background-color: #eee;
+    div{
+        display: flex;
+        justify-content: space-around;
+        width: 96%;
+        margin-left: 2%;
+        span{
+            text-align: center;
+            width: 20%;
+            @include mg($t:6px,$b:4px);
+            border: 1px solid #999;
+            background-color: #fff;
+            @include pd($t:4px,$b:4px);
+            border-radius: 14px;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.class-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-top: 1px #eee solid;
+    border-bottom: 1px #e5e5e5 solid;
+    @include mg($t:8px,$b:0px);
+    .detail{
+        display: flex;
+        width: 96%;
+        @include mg($r:2%,$t:10px);
+        .detail-left{
+            width: 30%;
+            img{
+                width: 100%;
+            }
+        }
+        .detail-right{
+            width: 70%;
+            .right-one{
+                font-size: 1rem;
+                display: flex;
+            }
+            .right-two{
+                @include mg($t:4px);
+                display: flex;
+                justify-content: flex-start;
+                align-items:center;
+                div:nth-child(1){
+                    display: flex;
+                    width: 40%;
+                    span{
+                        width: 20%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .top10{
+                @include mg($t:10px);
+                span{
+                    font-size: 0.4rem;
+                    color:orangered ;
+                    border: 1px solid orangered;
+                    @include pd(2px,2px,2px,2px);
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    .line{
+        width: 70%;
+        height: 1px;
+        @include mg($b:8px);
+    }
+    .tail{
+        width: 70%;
+        @include mg($b:8px);
+        span:nth-child(1){
+            background-color:orangered ;
+            color: white;
+            @include pd(1px,1px,1px,1px);
+            border-radius: 2px;
+        }
+
+    }
+}
+
+.line-two{
+    height: 7px;
+    width: 100%;
+    background-color: #eee;
+}

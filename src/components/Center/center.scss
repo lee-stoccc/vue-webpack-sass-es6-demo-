@@ -12,12 +12,30 @@
     padding-left: $l;
 }
 
-@mixin wh($w:0,$h:0){
+@mixin wh($w:0px,$h:0px){
     width: $w;
     height: $h;
 }
 
-.body{
-    @include wh($w:40%,$h:100px);
+.parent{
+    @include wh($w:100px,$h:100px);
     background-color: #42b983;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .child{
+        //display: flex;
+        background-color: antiquewhite;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+

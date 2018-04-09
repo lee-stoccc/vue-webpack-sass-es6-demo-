@@ -1,9 +1,9 @@
 <template>
-    <div class="parent">
+    <div class="parent ">
         <div class="child">sfsdfsss</div>
     </div>
-</template>
+</template >
 
-<style src="./center.sccc" lang="scss" scoped="">
+<style src="./center.scss" lang="scss" scoped>
 
 </style>

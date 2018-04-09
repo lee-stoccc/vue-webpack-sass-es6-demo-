@@ -1,0 +1,217 @@
+@import url(../../../static/swiper/swiper-4.2.0.min.css);
+
+@mixin mg($t:0,$r:0,$b:0,$l:0){
+    margin-top: $t;
+    margin-right: $r;
+    margin-bottom: $b;
+    margin-left: $l;
+}
+@mixin pd($t:0,$r:0,$b:0,$l:0){
+    padding-top: $t;
+    padding-right: $r;
+    padding-bottom: $b;
+    padding-left: $l;
+}
+
+body{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top{
+    div{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    img{
+        width: 30px;
+        height: 30px;
+    }
+    .temp{
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sel{
+        flex: 0 0 auto;
+        border: 0;
+        option{
+            border: 1px #fff solid;
+        }
+    }
+    .sear{
+        flex: 1 0 auto;
+        display: flex;
+        input{
+            flex: 1 0 auto;
+            border: 0;
+            background-color: #eee;
+            border-radius: 15px;
+            font-size: 0.4rem;
+            @include pd(5px,0,5px,15px);
+            outline:none
+        }
+    }
+    .add{
+        flex: 0 0 auto;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.swiper-container{
+    text-align: center;
+    height: 100px;
+    overflow: hidden;
+    img{
+        width: 100px;
+    }
+}
+
+.module-one{
+    img{
+        width: 36px;
+        height: 36px;
+        @include mg($b:8px)
+    }
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    div{
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+}
+.module-two,.module-three{
+    @extend .module-one;
+    font-size: 0.5rem;
+    @include mg($t:8px,$b:18px);
+    img{
+        width:24px;
+        height: 24px;
+    }
+
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: #eee;
+    @include mg(14px,0,5px,0)
+}
+.line-two{
+    @extend .line;
+    height: 10px;
+    @include mg(214x,0,1px,0)
+}
+
+.advertising {
+    height: 120px;
+    display: flex;
+    width: 100%;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 120px;
+        img{
+            flex: 0 1 auto;
+            width: 80%;
+            height: 120px;
+        }
+    }
+}
+.line-three{
+    @extend .line-two;
+    @include mg($t:10px)
+
+}
+.guess{
+    @include mg($t:16px);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: white;
+    div:nth-child(1){
+        background-color: white;
+        z-index: 2;
+        position: relative;
+        @include pd($l:8px,$r:8px)
+    }
+    .line{
+        position: absolute;
+        width: 30%;
+        height: 1px;
+        @include mg($t:7px);
+        z-index:1;
+    }
+}
+.line-four{
+    @extend .line;
+    @include mg($t:14px)
+}
+.detail{
+    display: flex;
+    width: 96%;
+    @include mg($r:2%,$l:2%,$t:12px);
+    .img-show{
+        width: 30%;
+        img{
+            width: 100%;
+        }
+    }
+    .text{
+        width: 70%;
+        div:nth-child(1){
+            align-items: flex-end;
+            font-size: 1rem;
+            display: flex;
+            justify-content: flex-start;
+            span:nth-child(1){
+                flex: 1 0 auto;
+            }
+            span:nth-child(2){
+                font-size: 0.6rem;
+            }
+        }
+        div:nth-child(2){
+            @include mg($t:8px,$b:8px);
+            display: flex;
+            justify-content: flex-start;
+            flex-flow: wrap;
+        }
+        div:nth-child(3){
+            @include mg($t:8px,$b:8px);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            span:nth-child(2){
+                color: orangered;
+                flex: 1 0 auto;
+                font-size: 1rem;
+            }
+            span:nth-child(4){
+                color: #666;
+                display: inline-block;
+                border: 1px solid #eee;
+                @include pd(1px,2px,1px,2px);
+                border-radius: 10px;
+            }
+        }
+        div:nth-child(4){
+            font-size: 0.9rem;
+
+            span:nth-child(1){
+                background-color: lavenderblush;
+                color: orangered;
+                display: inline-block;
+                @include pd(4px,4px,4px,4px);
+                border-radius: 8px;
+            }
+        }
+    }
+}
