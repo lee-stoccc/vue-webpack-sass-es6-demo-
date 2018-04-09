@@ -6,6 +6,8 @@ import Flex from '@/components/flex/Flex.vue'
 import Index from '@/components/meituan/Index.vue'
 import Footer from '@/components/footer/Foot.vue'
 import Near from '@/components/near/Near.vue'
+import Order from '@/components/order/Order.vue'
+import Mine from '@/components/mine/Mine.vue'
 
 Vue.use(Router)
 
@@ -40,6 +42,16 @@ export default new Router({
           path:'/near',
           name:'near',
           component:Near
+      },
+      {
+          path:'/order',
+          name:'order',
+          component:Order
+      },
+      {
+          path:'/mine',
+          name:'mine',
+          component:Mine
       }
   ]
 })

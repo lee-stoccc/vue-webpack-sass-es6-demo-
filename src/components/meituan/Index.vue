@@ -80,6 +80,6 @@
 </template>
 <!--<link rel="stylesheet" href="/static/swiper/swiper-4.2.0.min.css">-->
 <!--<script src="/static/swiper/swiper-4.2.0.min.js"></script>-->
-<style src="./index.scss" lang="scss"></style>
+<style src="./index.scss" lang="scss" scoped></style>
 <script src="./index.js"></script>
 

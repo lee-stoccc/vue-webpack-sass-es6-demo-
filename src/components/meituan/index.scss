@@ -106,7 +106,7 @@ body{
 .line-two{
     @extend .line;
     height: 10px;
-    @include mg(214x,0,1px,0)
+    @include mg(0,0,1px,0)
 }
 
 .advertising {

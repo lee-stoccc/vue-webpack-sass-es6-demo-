@@ -99,9 +99,9 @@
             </div>
             <div class="line-two"></div>
         </div>
+        <Footers></Footers>
     </div>
 </template>
 
-<style src="./near.scss" lang="scss">
-
-</style>
+<style src="./near.scss" lang="scss"></style>
+<script src="./near.js"></script>
