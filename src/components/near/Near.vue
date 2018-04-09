@@ -103,5 +103,5 @@
     </div>
 </template>
 
-<style src="./near.scss" lang="scss"></style>
+<style src="./near.scss" lang="scss" scoped></style>
 <script src="./near.js"></script>
