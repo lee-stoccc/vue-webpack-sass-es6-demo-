@@ -48,7 +48,7 @@
                             </div>
                             <div><span>￥</span><span>15</span><span>/人</span></div>
                         </div>
-                        <div>
+                        <div class="right-three">
                             <span>茶餐厅</span>
                             <span>|&nbsp;</span>
                             <span>建设北路</span>
@@ -83,7 +83,7 @@
                             </div>
                             <div><span>￥</span><span>15</span><span>/人</span></div>
                         </div>
-                        <div>
+                        <div  class="right-three">
                             <span>茶餐厅</span>
                             <span>|&nbsp;</span>
                             <span>建设北路</span>
@@ -99,6 +99,7 @@
             </div>
             <div class="line-two"></div>
         </div>
+        <div style="margin-top: 100px;width: 100%"></div>
         <Footers></Footers>
     </div>
 </template>

@@ -49,9 +49,10 @@ body{
             border: 0;
             background-color: #eee;
             border-radius: 15px;
-            font-size: 0.4rem;
-            @include pd(5px,0,5px,15px);
-            outline:none
+            font-size: 0.8rem;
+            @include pd(6px,0,5px,15px);
+            outline:none;
+            height: 20px;
         }
     }
     .add{
@@ -72,6 +73,7 @@ body{
 }
 
 .module-one{
+    font-size: 0.8rem;
     img{
         width: 36px;
         height: 36px;
@@ -89,7 +91,7 @@ body{
 }
 .module-two,.module-three{
     @extend .module-one;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     @include mg($t:8px,$b:18px);
     img{
         width:24px;
@@ -179,12 +181,14 @@ body{
             }
         }
         div:nth-child(2){
+            font-size: 0.8rem;
             @include mg($t:8px,$b:8px);
             display: flex;
             justify-content: flex-start;
             flex-flow: wrap;
         }
         div:nth-child(3){
+            font-size: 0.8rem;
             @include mg($t:8px,$b:8px);
             display: flex;
             justify-content: flex-start;
@@ -204,7 +208,6 @@ body{
         }
         div:nth-child(4){
             font-size: 0.9rem;
-
             span:nth-child(1){
                 background-color: lavenderblush;
                 color: orangered;

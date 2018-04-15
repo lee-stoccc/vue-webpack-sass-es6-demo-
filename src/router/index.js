@@ -8,6 +8,8 @@ import Footer from '@/components/footer/Foot.vue'
 import Near from '@/components/near/Near.vue'
 import Order from '@/components/order/Order.vue'
 import Mine from '@/components/mine/Mine.vue'
+import SignUp from '@/components/SignUp/SignUp.vue'
+import Sure from '@/components/makeSure/Sure.vue'
 
 Vue.use(Router)
 
@@ -51,7 +53,19 @@ export default new Router({
       {
           path:'/mine',
           name:'mine',
-          component:Mine
+          component:Mine,
+      }
+      ,
+      {
+          path:'/sure',
+          name:'sure',
+          component:Sure
+      }
+      ,
+      {
+          path:'/signup',
+          name:'signup',
+          component:SignUp
       }
   ]
 })

@@ -10,10 +10,16 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+        // '/abc': {
+        //     target: 'http://192.168.3.100',
+        //     secure: false,
+        //     changeOrigin: true,
+        // }
+    },
 
     // Various Dev Server settings
-    host: 'lee.shadow', // can be overwritten by process.env.HOST
+    host: '192.168.2.120', // can be overwritten by process.env.HOST
     port: 8081, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,

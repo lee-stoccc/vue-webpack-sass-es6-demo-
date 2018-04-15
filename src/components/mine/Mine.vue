@@ -1,5 +1,6 @@
 <template>
     <div>
+
         <div class="top">
             <span><img src="/static/imgs/mine/change.png" alt=""></span>
             <span><img src="/static/imgs/mine/change.png" alt=""></span>
@@ -39,6 +40,7 @@
             <div><img src="/static/imgs/index/enter.png" alt=""><span>关于美团</span></div>
         </section>
 
+        <div style="margin-top: 100px;width: 100%"></div>
 
         <Footers></Footers>
     </div>
